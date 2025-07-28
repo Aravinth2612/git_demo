@@ -1,0 +1,279 @@
+<html>
+
+<head>
+    <title>First Project</title>
+</head>
+
+<body>
+
+    <script>
+        var college = {
+            "university": {
+                "name": "TechnoGlobal University",
+                "established": 1987,
+                "location": {
+                    "country": "United States",
+                    "state": "California",
+                    "city": "San Francisco",
+                    "coordinates": {
+                        "latitude": 37.7749,
+                        "longitude": -122.4194
+                    }
+                },
+                "accreditation": {
+                    "status": "fully_accredited",
+                    "agencies": ["WASC", "ABET", "AACSB"],
+                    "last_reviewed": "2023-03-15"
+                },
+                "faculties": [
+                    {
+                        "id": "CS",
+                        "name": "Computer Science",
+                        "dean": {
+                            "name": "Dr. Sarah Chen",
+                            "email": "s.chen@techno.edu",
+                            "tenure_start": "2019-08-01"
+                        },
+                        "departments": [
+                            {
+                                "name": "Software Engineering",
+                                "head": "Prof. Michael Rodriguez",
+                                "courses": [
+                                    {
+                                        "code": "SE-301",
+                                        "title": "Advanced Software Architecture",
+                                        "credits": 3,
+                                        "prerequisites": ["SE-201", "CS-102"],
+                                        "instructor": {
+                                            "name": "Dr. Emily Watson",
+                                            "office": "CS-Building-405",
+                                            "office_hours": {
+                                                "monday": "14:00-16:00",
+                                                "wednesday": "10:00-12:00"
+                                            }
+                                        },
+                                        "schedule": {
+                                            "semester": "Fall 2024",
+                                            "days": ["Monday", "Wednesday", "Friday"],
+                                            "time": "09:00-10:30",
+                                            "room": "CS-101"
+                                        },
+                                        "enrolled_students": [
+                                            {
+                                                "student_id": "ST2024001",
+                                                "name": "Alex Johnson",
+                                                "year": 3,
+                                                "gpa": 3.7,
+                                                "major": "Computer Science",
+                                                "contact": {
+                                                    "email": "alex.johnson@student.techno.edu",
+                                                    "phone": "+1-555-0123"
+                                                },
+                                                "assignments": [
+                                                    {
+                                                        "name": "Design Patterns Project",
+                                                        "due_date": "2024-10-15",
+                                                        "score": 88,
+                                                        "max_score": 100,
+                                                        "submission_status": "submitted"
+                                                    },
+                                                    {
+                                                        "name": "Microservices Architecture",
+                                                        "due_date": "2024-11-20",
+                                                        "score": null,
+                                                        "max_score": 100,
+                                                        "submission_status": "pending"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "student_id": "ST2024002",
+                                                "name": "Maria Garcia",
+                                                "year": 4,
+                                                "gpa": 3.9,
+                                                "major": "Software Engineering",
+                                                "contact": {
+                                                    "email": "maria.garcia@student.techno.edu",
+                                                    "phone": "+1-555-0456"
+                                                },
+                                                "assignments": [
+                                                    {
+                                                        "name": "Design Patterns Project",
+                                                        "due_date": "2024-10-15",
+                                                        "score": 95,
+                                                        "max_score": 100,
+                                                        "submission_status": "submitted"
+                                                    },
+                                                    {
+                                                        "name": "Microservices Architecture",
+                                                        "due_date": "2024-11-20",
+                                                        "score": null,
+                                                        "max_score": 100,
+                                                        "submission_status": "pending"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Data Science",
+                                "head": "Dr. James Park",
+                                "courses": [
+                                    {
+                                        "code": "DS-401",
+                                        "title": "Machine Learning Applications",
+                                        "credits": 4,
+                                        "prerequisites": ["MATH-301", "CS-201"],
+                                        "instructor": {
+                                            "name": "Prof. Lisa Thompson",
+                                            "office": "DS-Building-201",
+                                            "office_hours": {
+                                                "tuesday": "13:00-15:00",
+                                                "thursday": "09:00-11:00"
+                                            }
+                                        },
+                                        "schedule": {
+                                            "semester": "Fall 2024",
+                                            "days": ["Tuesday", "Thursday"],
+                                            "time": "11:00-13:00",
+                                            "room": "DS-Lab-A"
+                                        },
+                                        "enrolled_students": [
+                                            {
+                                                "student_id": "ST2024003",
+                                                "name": "Robert Kim",
+                                                "year": 4,
+                                                "gpa": 3.5,
+                                                "major": "Data Science",
+                                                "contact": {
+                                                    "email": "robert.kim@student.techno.edu",
+                                                    "phone": "+1-555-0789"
+                                                },
+                                                "assignments": [
+                                                    {
+                                                        "name": "Neural Network Implementation",
+                                                        "due_date": "2024-10-30",
+                                                        "score": 92,
+                                                        "max_score": 100,
+                                                        "submission_status": "submitted"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "BUS",
+                        "name": "Business Administration",
+                        "dean": {
+                            "name": "Dr. Jennifer Adams",
+                            "email": "j.adams@techno.edu",
+                            "tenure_start": "2021-01-15"
+                        },
+                        "departments": [
+                            {
+                                "name": "Marketing",
+                                "head": "Prof. David Wilson",
+                                "courses": [
+                                    {
+                                        "code": "MKT-201",
+                                        "title": "Digital Marketing Strategy",
+                                        "credits": 3,
+                                        "prerequisites": ["BUS-101"],
+                                        "instructor": {
+                                            "name": "Dr. Amanda Foster",
+                                            "office": "BUS-Building-302",
+                                            "office_hours": {
+                                                "monday": "15:00-17:00",
+                                                "friday": "10:00-12:00"
+                                            }
+                                        },
+                                        "schedule": {
+                                            "semester": "Fall 2024",
+                                            "days": ["Monday", "Wednesday"],
+                                            "time": "14:00-15:30",
+                                            "room": "BUS-201"
+                                        },
+                                        "enrolled_students": [
+                                            {
+                                                "student_id": "ST2024004",
+                                                "name": "Sophie Brown",
+                                                "year": 2,
+                                                "gpa": 3.8,
+                                                "major": "Marketing",
+                                                "contact": {
+                                                    "email": "sophie.brown@student.techno.edu",
+                                                    "phone": "+1-555-0321"
+                                                },
+                                                "assignments": [
+                                                    {
+                                                        "name": "Social Media Campaign Analysis",
+                                                        "due_date": "2024-11-05",
+                                                        "score": null,
+                                                        "max_score": 100,
+                                                        "submission_status": "pending"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "facilities": {
+                    "libraries": [
+                        {
+                            "name": "Central Library",
+                            "floors": 5,
+                            "capacity": 2000,
+                            "resources": {
+                                "books": 150000,
+                                "digital_databases": 45,
+                                "study_rooms": 32
+                            },
+                            "hours": {
+                                "weekdays": "07:00-23:00",
+                                "weekends": "09:00-20:00"
+                            }
+                        }
+                    ],
+                    "laboratories": [
+                        {
+                            "name": "AI Research Lab",
+                            "building": "CS-Building",
+                            "floor": 3,
+                            "equipment": ["GPU Clusters", "Quantum Simulator", "VR Headsets"],
+                            "capacity": 25,
+                            "supervisor": "Dr. Alan Turing"
+                        }
+                    ]
+                },
+                "statistics": {
+                    "total_students": 12500,
+                    "total_faculty": 450,
+                    "graduation_rate": 89.5,
+                    "student_to_faculty_ratio": "14:1",
+                    "international_students_percentage": 22.3
+                }
+            }
+        }
+    
+        console.log(college.university.name);
+        console.log(college.university.location.city);
+        console.log(college.university.faculties[0].dean.name);
+        console.log(college.university.faculties[1].departments[0].courses[0].instructor.office_hours);
+        console.log(college.university.faculties[0].departments[0].courses[0].schedule.room);
+        console.log(college.university.faculties[0].departments[0].courses[0].enrolled_students[1].gpa);
+        console.log(college.university.facilities.laboratories[0].equipment);
+        console.log(college.university.faculties[0].departments[1].courses[0].prerequisites);
+    </script>
+</body>
+
+</html>

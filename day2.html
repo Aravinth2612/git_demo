@@ -1,0 +1,57 @@
+<html>
+<title>Day2</title>
+
+<head></head>
+
+<body>
+    <script>
+        // function myFunction(x) {
+        //     return Math.pow(x, 2);
+        // }
+
+        // var a = myFunction(2);
+        // console.log(a);
+
+        // function cToF(c) {
+        //     return c * (9 / 5) + 32;
+        // }
+
+        // var f = cToF(32);
+        // console.log(f);
+
+        function numberToYMWHMS(n) {
+            var years = n / 365;
+            var months = n / 30.417;
+            var weeks = n / 7;
+            var hours = n * 24;
+            var minutes = n * 1440;
+            var seconds = n * 86400;
+
+            console.log(days + " days in years is " + years);
+            console.log(days + " days in months is " + months);
+            console.log(days + " days in weeks is " + weeks);
+            console.log(days + " days in hours is " + hours);
+            console.log(days + " days in minutes is " + minutes);
+            console.log(days + " days in seconds is " + seconds);
+
+            // return {
+            //     years: years,
+            //     months: months,
+            //     weeks: weeks,
+            //     hours: hours,
+            //     minutes: minutes,
+            //     seconds: seconds
+            // }
+        }
+        var days = 365;
+        var convert = numberToYMWHMS(days);
+        // console.log(days + " days in years is " + convert.years);
+        // console.log(days + " days in months is " + convert.months);
+        // console.log(days + " days in weeks is " + convert.weeks);
+        // console.log(days + " days in hours is " + convert.hours);
+        // console.log(days + " days in minutes is " + convert.minutes);
+        // console.log(days + " days in seconds is " + convert.seconds);
+    </script>
+</body>
+
+</html>

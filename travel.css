@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: #FEFCFB; */
+}
+
+.hero-section {
+    background-color: #FEFCFB;
+}
+
+.hero-section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo>a {
+    color: #000000;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 10px;
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.nav-menu>a {
+    margin: 0 20px;
+    color: #222222;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu>a:hover {
+    color: #FA7436;
+    transform: translateY(-1px);
+}
+
+.button {
+    display: flex;
+}
+
+.button>a {
+    color: #FD8D3A;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    margin: 10px 50px 0px 0px;
+    transition: transform 0.3s ease;
+}
+
+.button>a:hover {
+    transform: translateY(-2px);
+}
+
+.signup-btn {
+    background-color: #FA7436;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 50px;
+    box-shadow: -5px 10px 14px -1px rgba(253, 141, 58, 0.23);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.signup-btn:hover {
+    transform: translateY(-2px);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.title {
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 44px;
+}
+
+.description {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(124, 123, 123);
+}
+
+.discover-btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    color: #FA7436;
+    border: 1px solid #FA7436;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    width: 178px;
+    height: 60px;
+}
+
+.search-box {
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 40px auto 0;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.search-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.search-box div strong {
+    color: #222222;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.search-box div span {
+    color: rgb(124, 123, 123);
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.explore-btn {
+    background-color: #FA7436;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 50px;
+    box-shadow: -5px 10px 14px -1px rgba(253, 141, 58, 0.23);
+    cursor: pointer;
+}
+
+.things-section {
+    background-color: #F5F9FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 370px 120px 370px;
+}
+
+.things-section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    max-height: 500px;
+}
+
+.things-sec-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.things-section-heading {
+    display: flex;
+}
+
+.things-sec-content h1 {
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 44px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+
+.things-sec-content p {
+    text-align: center;
+    padding-left: 60px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(124, 123, 123);
+}
+
+.things-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.things-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    padding: 20px;
+    max-width: 370px;
+    border-radius: 8px;
+}
+
+.things-card img {
+    margin-bottom: 30px;
+    height: 48px;
+    width: 48px;
+}
+
+.things-card h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    width: 280px;
+}
+
+.things-description {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(124, 123, 123);
+}
+
+.deals-section {
+    background-color: #FEFCFB;
+}
+
+.deals-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

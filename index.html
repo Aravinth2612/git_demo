@@ -1,279 +1,275 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>First Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="./travel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <div class="hero-section">
+        <div class="hero-section-container">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="">Trabook
+                    </a><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.64114 4.96058C1.79429 4.76583 1.99598 4.50221 2.1575 4.31379C2.64123 3.79446 2.704 3.72638 3.1442 3.34242C3.27476 3.24108 3.42959 3.11917 3.58106 3.00437C2.46381 3.89896 2.32154 4.88933 3.34673 5.50129C3.34506 5.50129 3.34506 5.50129 3.34506 5.50287C4.77866 6.31987 7.92037 6.14333 10.3993 5.09675C12.8003 4.08342 13.6866 2.63388 12.5015 1.77254C11.4613 1.58808 10.221 1.56671 8.90874 1.73296L8.77233 1.52L8.88531 1.16692C9.65693 1.10121 10.39 1.11704 11.0227 1.21917C11.1759 1.24371 11.3776 1.28567 11.5282 1.31575C11.8195 1.38304 11.9776 1.42342 12.1676 1.48121C12.3618 1.53583 12.5275 1.59046 12.8162 1.69179C13.0991 1.79708 13.2213 1.84458 13.4481 1.95146C13.702 2.06108 13.9488 2.18506 14.187 2.32275C16.0751 3.44612 14.9009 5.49575 11.5692 6.90017C8.24676 8.29983 4.0129 8.51992 2.11566 7.41C2.11482 7.40842 2.11231 7.40683 2.10729 7.40525H2.11064C1.07456 6.78458 0.965765 5.88367 1.64114 4.96058ZM10.2854 12.8139L10.2587 11.552L9.31045 10.5545C6.17795 11.2258 3.09901 11.0817 1.38672 10.1278C1.38087 10.1215 1.36664 10.1151 1.36078 10.1088C0.391655 9.54433 0.152303 8.816 0.225113 8.02433C-0.00168595 9.18254 -0.0200977 9.60054 0.0125413 10.5917C0.0527123 11.2124 0.431826 11.7847 1.19424 12.236L1.2001 12.2423C3.02537 13.3158 6.82822 13.5486 10.2854 12.8139ZM14.2398 14.2587C9.81845 15.9362 4.28489 16.0352 1.88133 14.4827C2.1409 15.0828 2.49409 15.6427 2.92912 16.1437C5.13518 17.5687 10.2143 17.4776 14.2707 15.9378C16.645 15.0377 18.143 13.8399 18.5364 12.7173L18.6469 12.3793C18.9088 11.5227 18.9582 10.8094 19 10.1745C18.9523 11.5528 17.2359 13.1203 14.2398 14.2587ZM4.47989 17.4895C4.61881 17.6146 5.05567 18.122 7.26926 18.6825C7.86764 18.8076 9.37405 19.209 12.1567 18.6255L12.1735 18.3857L11.9534 18.0595C9.37154 18.6374 6.5035 18.4442 4.47989 17.4895ZM10.8688 7.50737L13.2196 9.19283C13.2196 9.19283 13.7226 9.53563 13.248 9.77629C12.7752 10.0146 11.5609 10.598 11.5609 10.598L10.3616 10.1745L9.75986 10.4278L10.821 11.2995L10.8294 12.6556L11.4529 12.3935L11.8663 11.248C11.8663 11.248 13.1359 10.7857 13.6397 10.6115C14.146 10.4413 14.0782 11.024 14.0782 11.024L13.8289 13.8035L14.6574 13.4552L16.0215 9.70504C16.0215 9.70504 16.7446 9.37254 17.2534 9.08042C17.7614 8.78829 17.9355 8.30379 17.9355 8.30379C17.9355 8.30379 17.4401 8.10192 16.8693 8.26421C16.2985 8.42492 15.5545 8.7115 15.5545 8.7115L11.6948 7.16062L10.8688 7.50737ZM5.89508 2.17471L7.49104 3.37725L7.92706 3.3155L7.05836 2.23646C7.05836 2.23646 6.86923 2.01321 7.12364 1.96017C7.37973 1.90633 8.02749 1.78125 8.02749 1.78125L8.51456 2.14937L8.84263 2.10346L8.47104 1.54454L8.66688 0.924667L8.34969 0.968208L7.97393 1.44004C7.97393 1.44004 7.31445 1.49862 7.05502 1.51921C6.79391 1.53821 6.90605 1.273 6.90605 1.273L7.40651 0L6.96798 0.0609583L5.81306 1.65142C5.81306 1.65142 5.42809 1.71792 5.14941 1.79313C4.86988 1.86754 4.72259 2.07179 4.72259 2.07179C4.72259 2.07179 4.92763 2.22854 5.21636 2.223C5.5076 2.21746 5.89508 2.17471 5.89508 2.17471ZM13.7828 17.6265L12.7501 17.1158L12.5124 17.1942L13.1242 17.712C13.1242 17.712 13.2547 17.8172 13.1175 17.8735C12.9802 17.9289 12.6304 18.065 12.6304 18.065L12.3417 17.9431L12.1701 18.0017L12.4103 18.244L12.3869 18.5978L12.566 18.5392L12.6999 18.2519C12.6999 18.2519 13.0631 18.1497 13.2079 18.1133C13.3518 18.0761 13.3192 18.236 13.3192 18.236L13.1828 19L13.4213 18.9216L13.8891 17.9115C13.8891 17.9115 14.0958 17.8347 14.244 17.7642C14.3921 17.6937 14.4507 17.5639 14.4507 17.5639C14.4507 17.5639 14.3193 17.4958 14.1569 17.5299C13.9937 17.5623 13.7828 17.6265 13.7828 17.6265Z"
+                            fill="#666666" />
+                    </svg>
+                </div>
+                <div class="nav-menu">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Destination</a>
+                    <a href="">Tour</a>
+                    <a href="">Blog</a>
+                </div>
+                <div class="button">
+                    <a href="">Login</a>
+                    <button class="signup-btn">Sign up</button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="content">
+                    <div>
 
-    <script>
-        var college = {
-            "university": {
-                "name": "TechnoGlobal University",
-                "established": 1987,
-                "location": {
-                    "country": "United States",
-                    "state": "California",
-                    "city": "San Francisco",
-                    "coordinates": {
-                        "latitude": 37.7749,
-                        "longitude": -122.4194
-                    }
-                },
-                "accreditation": {
-                    "status": "fully_accredited",
-                    "agencies": ["WASC", "ABET", "AACSB"],
-                    "last_reviewed": "2023-03-15"
-                },
-                "faculties": [
-                    {
-                        "id": "CS",
-                        "name": "Computer Science",
-                        "dean": {
-                            "name": "Dr. Sarah Chen",
-                            "email": "s.chen@techno.edu",
-                            "tenure_start": "2019-08-01"
-                        },
-                        "departments": [
-                            {
-                                "name": "Software Engineering",
-                                "head": "Prof. Michael Rodriguez",
-                                "courses": [
-                                    {
-                                        "code": "SE-301",
-                                        "title": "Advanced Software Architecture",
-                                        "credits": 3,
-                                        "prerequisites": ["SE-201", "CS-102"],
-                                        "instructor": {
-                                            "name": "Dr. Emily Watson",
-                                            "office": "CS-Building-405",
-                                            "office_hours": {
-                                                "monday": "14:00-16:00",
-                                                "wednesday": "10:00-12:00"
-                                            }
-                                        },
-                                        "schedule": {
-                                            "semester": "Fall 2024",
-                                            "days": ["Monday", "Wednesday", "Friday"],
-                                            "time": "09:00-10:30",
-                                            "room": "CS-101"
-                                        },
-                                        "enrolled_students": [
-                                            {
-                                                "student_id": "ST2024001",
-                                                "name": "Alex Johnson",
-                                                "year": 3,
-                                                "gpa": 3.7,
-                                                "major": "Computer Science",
-                                                "contact": {
-                                                    "email": "alex.johnson@student.techno.edu",
-                                                    "phone": "+1-555-0123"
-                                                },
-                                                "assignments": [
-                                                    {
-                                                        "name": "Design Patterns Project",
-                                                        "due_date": "2024-10-15",
-                                                        "score": 88,
-                                                        "max_score": 100,
-                                                        "submission_status": "submitted"
-                                                    },
-                                                    {
-                                                        "name": "Microservices Architecture",
-                                                        "due_date": "2024-11-20",
-                                                        "score": null,
-                                                        "max_score": 100,
-                                                        "submission_status": "pending"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "student_id": "ST2024002",
-                                                "name": "Maria Garcia",
-                                                "year": 4,
-                                                "gpa": 3.9,
-                                                "major": "Software Engineering",
-                                                "contact": {
-                                                    "email": "maria.garcia@student.techno.edu",
-                                                    "phone": "+1-555-0456"
-                                                },
-                                                "assignments": [
-                                                    {
-                                                        "name": "Design Patterns Project",
-                                                        "due_date": "2024-10-15",
-                                                        "score": 95,
-                                                        "max_score": 100,
-                                                        "submission_status": "submitted"
-                                                    },
-                                                    {
-                                                        "name": "Microservices Architecture",
-                                                        "due_date": "2024-11-20",
-                                                        "score": null,
-                                                        "max_score": 100,
-                                                        "submission_status": "pending"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Data Science",
-                                "head": "Dr. James Park",
-                                "courses": [
-                                    {
-                                        "code": "DS-401",
-                                        "title": "Machine Learning Applications",
-                                        "credits": 4,
-                                        "prerequisites": ["MATH-301", "CS-201"],
-                                        "instructor": {
-                                            "name": "Prof. Lisa Thompson",
-                                            "office": "DS-Building-201",
-                                            "office_hours": {
-                                                "tuesday": "13:00-15:00",
-                                                "thursday": "09:00-11:00"
-                                            }
-                                        },
-                                        "schedule": {
-                                            "semester": "Fall 2024",
-                                            "days": ["Tuesday", "Thursday"],
-                                            "time": "11:00-13:00",
-                                            "room": "DS-Lab-A"
-                                        },
-                                        "enrolled_students": [
-                                            {
-                                                "student_id": "ST2024003",
-                                                "name": "Robert Kim",
-                                                "year": 4,
-                                                "gpa": 3.5,
-                                                "major": "Data Science",
-                                                "contact": {
-                                                    "email": "robert.kim@student.techno.edu",
-                                                    "phone": "+1-555-0789"
-                                                },
-                                                "assignments": [
-                                                    {
-                                                        "name": "Neural Network Implementation",
-                                                        "due_date": "2024-10-30",
-                                                        "score": 92,
-                                                        "max_score": 100,
-                                                        "submission_status": "submitted"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": "BUS",
-                        "name": "Business Administration",
-                        "dean": {
-                            "name": "Dr. Jennifer Adams",
-                            "email": "j.adams@techno.edu",
-                            "tenure_start": "2021-01-15"
-                        },
-                        "departments": [
-                            {
-                                "name": "Marketing",
-                                "head": "Prof. David Wilson",
-                                "courses": [
-                                    {
-                                        "code": "MKT-201",
-                                        "title": "Digital Marketing Strategy",
-                                        "credits": 3,
-                                        "prerequisites": ["BUS-101"],
-                                        "instructor": {
-                                            "name": "Dr. Amanda Foster",
-                                            "office": "BUS-Building-302",
-                                            "office_hours": {
-                                                "monday": "15:00-17:00",
-                                                "friday": "10:00-12:00"
-                                            }
-                                        },
-                                        "schedule": {
-                                            "semester": "Fall 2024",
-                                            "days": ["Monday", "Wednesday"],
-                                            "time": "14:00-15:30",
-                                            "room": "BUS-201"
-                                        },
-                                        "enrolled_students": [
-                                            {
-                                                "student_id": "ST2024004",
-                                                "name": "Sophie Brown",
-                                                "year": 2,
-                                                "gpa": 3.8,
-                                                "major": "Marketing",
-                                                "contact": {
-                                                    "email": "sophie.brown@student.techno.edu",
-                                                    "phone": "+1-555-0321"
-                                                },
-                                                "assignments": [
-                                                    {
-                                                        "name": "Social Media Campaign Analysis",
-                                                        "due_date": "2024-11-05",
-                                                        "score": null,
-                                                        "max_score": 100,
-                                                        "submission_status": "pending"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ],
-                "facilities": {
-                    "libraries": [
-                        {
-                            "name": "Central Library",
-                            "floors": 5,
-                            "capacity": 2000,
-                            "resources": {
-                                "books": 150000,
-                                "digital_databases": 45,
-                                "study_rooms": 32
-                            },
-                            "hours": {
-                                "weekdays": "07:00-23:00",
-                                "weekends": "09:00-20:00"
-                            }
-                        }
-                    ],
-                    "laboratories": [
-                        {
-                            "name": "AI Research Lab",
-                            "building": "CS-Building",
-                            "floor": 3,
-                            "equipment": ["GPU Clusters", "Quantum Simulator", "VR Headsets"],
-                            "capacity": 25,
-                            "supervisor": "Dr. Alan Turing"
-                        }
-                    ]
-                },
-                "statistics": {
-                    "total_students": 12500,
-                    "total_faculty": 450,
-                    "graduation_rate": 89.5,
-                    "student_to_faculty_ratio": "14:1",
-                    "international_students_percentage": 22.3
-                }
-            }
-        }
-    
-        console.log(college.university.name);
-        console.log(college.university.location.city);
-        console.log(college.university.faculties[0].dean.name);
-        console.log(college.university.faculties[1].departments[0].courses[0].instructor.office_hours);
-        console.log(college.university.faculties[0].departments[0].courses[0].schedule.room);
-        console.log(college.university.faculties[0].departments[0].courses[0].enrolled_students[1].gpa);
-        console.log(college.university.facilities.laboratories[0].equipment);
-        console.log(college.university.faculties[0].departments[1].courses[0].prerequisites);
-    </script>
+                        <h1 class="title">Get started your exciting <span style="color:#FA7436 ;">journey</span>
+                            with us.
+                        </h1>
+                    </div>
+                    <p class="description">A Team of experienced tourism professionals will provide you with the best
+                        advice
+                        and tips for your
+                        desire place. </p>
+                    <button class="discover-btn">Discover Now</button>
+                </div>
+                <div class="image">
+                    <img src="./images/Image1.png" alt="">
+                </div>
+            </div>
+            <div class="search-box">
+                <div>
+                    <strong>Location <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#FA7436" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></strong>
+                    <span>Where are you going</span>
+                </div>
+                <div>
+                    <strong>Date <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#FA7436" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></strong>
+                    <span>When you will go</span>
+                </div>
+                <div>
+                    <strong>Guest <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.5L6 6.5L11 1.5" stroke="#FA7436" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></strong>
+                    <span>Number of guests</span>
+                </div>
+                <button class="explore-btn">Explore Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="things-section">
+        <div class="things-section-container">
+            <div class="things-sec-contents">
+                <div class="things-sec-content">
+                    <h1>Things you need <span style="color: #FA7436;">to do</span></h1>
+                    <p>We ensure that you’ll embark on a perfectly planned, safe vacation at a price you can afford.
+                    </p>
+                </div>
+                <!-- <div class="things-sec-content">
+                    <img src="./images/Elemen1t.png" alt="airplane-img" style="height: 70px; width: 100px;">
+                </div> -->
+            </div>
+            <div class="things-cards">
+                <div class="things-card">
+                    <img src="./images/Group1.png" alt="">
+                    <h3>Sign Up</h3>
+                    <div class="things-description">
+                        <p>Completes all the work associated with planning and processing</p>
+                    </div>
+                </div>
+                <div class="things-card">
+                    <img src="./images/Group2.png" alt="">
+                    <div>
+                        <h3>Worth of Money</h3>
+                    </div>
+                    <div class="things-description">
+                        <p>After successful access then book from exclusive deals & pricing</p>
+                    </div>
+                </div>
+                <div class="things-card">
+                    <img src="./images/Group3.png" alt="">
+                    <h3>Exciting Travel</h3>
+                    <div class="things-description">
+                        <p>Start and explore a wide range of exciting travel experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="deals-section">
+        <div class="deals-container">
+            <div class="deals-title">
+                <div class="deals-heading">
+                    <h1>Exclusive <span style="color: #FA7436;">deals & discounts</span></h1>
+                </div>
+                <div class="deals-description">
+                    <p>Discover our fantastic early booking discounts & start planning your journey.
+                    </p>
+                </div>
+            </div>
+            <div class="deals-image-cards">
+                <div class="deals-image-card">
+                    <div class="deals-img">
+                        <img src="./images/deals-img1.png" alt="">
+                        <div class="upper-content">
+                            <div class="name">
+                                <p>Madrid</p>
+                            </div>
+                            <div class="rating">
+                                <img src="./images/star 1.png" alt=""> 4.8
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="place">
+                                <p> <svg width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.28572 0C4.61925 0.00196598 3.0216 0.66484 1.84322 1.84321C0.664847 3.02159 0.00197267 4.61924 6.68736e-06 6.28571C-0.00198925 7.64756 0.442853 8.97245 1.26629 10.0571C1.26629 10.0571 1.43772 10.2829 1.46572 10.3154L6.28572 16L11.108 10.3126C11.1331 10.2823 11.3052 10.0571 11.3052 10.0571L11.3057 10.0554C12.1288 8.97121 12.5734 7.64693 12.5714 6.28571C12.5695 4.61924 11.9066 3.02159 10.7282 1.84321C9.54985 0.66484 7.95219 0.00196598 6.28572 0ZM6.28572 8.57143C5.83365 8.57143 5.39173 8.43737 5.01585 8.18622C4.63996 7.93506 4.347 7.57808 4.174 7.16042C4.001 6.74276 3.95573 6.28318 4.04393 5.83979C4.13212 5.39641 4.34981 4.98913 4.66948 4.66947C4.98914 4.34981 5.39642 4.13211 5.8398 4.04392C6.28319 3.95572 6.74277 4.00099 7.16043 4.17399C7.57809 4.34699 7.93507 4.63996 8.18622 5.01584C8.43738 5.39172 8.57144 5.83364 8.57144 6.28571C8.57068 6.89169 8.32962 7.47263 7.90113 7.90112C7.47264 8.32961 6.8917 8.57067 6.28572 8.57143Z"
+                                            fill="#999999" />
+                                        <path
+                                            d="M6.28571 8.57143C7.54808 8.57143 8.57143 7.54808 8.57143 6.28571C8.57143 5.02335 7.54808 4 6.28571 4C5.02335 4 4 5.02335 4 6.28571C4 7.54808 5.02335 8.57143 6.28571 8.57143Z"
+                                            fill="#FEFCFB" />
+                                    </svg> Spain</p>
+                            </div>
+                            <div class="price">
+                                <div class="og-price">
+                                    <p>$950</p>
+                                </div>
+                                <div class="discount-price">$850</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-image-card">
+                    <div class="deals-img">
+                        <div class="upper-content">
+                            <img src="./images/deals-img2.png" alt="">
+                            <div class="name">
+                                Firenze
+                            </div>
+                            <div class="rating">
+                                <img src="./images/star 1.png" alt=""> 4.5
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="place">
+                                <p> <svg width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.28572 0C4.61925 0.00196598 3.0216 0.66484 1.84322 1.84321C0.664847 3.02159 0.00197267 4.61924 6.68736e-06 6.28571C-0.00198925 7.64756 0.442853 8.97245 1.26629 10.0571C1.26629 10.0571 1.43772 10.2829 1.46572 10.3154L6.28572 16L11.108 10.3126C11.1331 10.2823 11.3052 10.0571 11.3052 10.0571L11.3057 10.0554C12.1288 8.97121 12.5734 7.64693 12.5714 6.28571C12.5695 4.61924 11.9066 3.02159 10.7282 1.84321C9.54985 0.66484 7.95219 0.00196598 6.28572 0ZM6.28572 8.57143C5.83365 8.57143 5.39173 8.43737 5.01585 8.18622C4.63996 7.93506 4.347 7.57808 4.174 7.16042C4.001 6.74276 3.95573 6.28318 4.04393 5.83979C4.13212 5.39641 4.34981 4.98913 4.66948 4.66947C4.98914 4.34981 5.39642 4.13211 5.8398 4.04392C6.28319 3.95572 6.74277 4.00099 7.16043 4.17399C7.57809 4.34699 7.93507 4.63996 8.18622 5.01584C8.43738 5.39172 8.57144 5.83364 8.57144 6.28571C8.57068 6.89169 8.32962 7.47263 7.90113 7.90112C7.47264 8.32961 6.8917 8.57067 6.28572 8.57143Z"
+                                            fill="#999999" />
+                                        <path
+                                            d="M6.28571 8.57143C7.54808 8.57143 8.57143 7.54808 8.57143 6.28571C8.57143 5.02335 7.54808 4 6.28571 4C5.02335 4 4 5.02335 4 6.28571C4 7.54808 5.02335 8.57143 6.28571 8.57143Z"
+                                            fill="#FEFCFB" />
+                                    </svg> Italy</p>
+                            </div>
+                            <div class="price">
+                                <div class="og-price">
+                                    <p>$850</p>
+                                </div>
+                                <div class="discount-price">$750</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-image-card">
+                    <div class="deals-img">
+                        <img src="./images/deals-img3.png" alt="">
+                        <div class="upper-content">
+                            <div class="name">
+                                Paris
+                            </div>
+                            <div class="rating">
+                                <img src="./images/star 1.png" alt=""> 4.4
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="place">
+                                <p> <svg width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.28572 0C4.61925 0.00196598 3.0216 0.66484 1.84322 1.84321C0.664847 3.02159 0.00197267 4.61924 6.68736e-06 6.28571C-0.00198925 7.64756 0.442853 8.97245 1.26629 10.0571C1.26629 10.0571 1.43772 10.2829 1.46572 10.3154L6.28572 16L11.108 10.3126C11.1331 10.2823 11.3052 10.0571 11.3052 10.0571L11.3057 10.0554C12.1288 8.97121 12.5734 7.64693 12.5714 6.28571C12.5695 4.61924 11.9066 3.02159 10.7282 1.84321C9.54985 0.66484 7.95219 0.00196598 6.28572 0ZM6.28572 8.57143C5.83365 8.57143 5.39173 8.43737 5.01585 8.18622C4.63996 7.93506 4.347 7.57808 4.174 7.16042C4.001 6.74276 3.95573 6.28318 4.04393 5.83979C4.13212 5.39641 4.34981 4.98913 4.66948 4.66947C4.98914 4.34981 5.39642 4.13211 5.8398 4.04392C6.28319 3.95572 6.74277 4.00099 7.16043 4.17399C7.57809 4.34699 7.93507 4.63996 8.18622 5.01584C8.43738 5.39172 8.57144 5.83364 8.57144 6.28571C8.57068 6.89169 8.32962 7.47263 7.90113 7.90112C7.47264 8.32961 6.8917 8.57067 6.28572 8.57143Z"
+                                            fill="#999999" />
+                                        <path
+                                            d="M6.28571 8.57143C7.54808 8.57143 8.57143 7.54808 8.57143 6.28571C8.57143 5.02335 7.54808 4 6.28571 4C5.02335 4 4 5.02335 4 6.28571C4 7.54808 5.02335 8.57143 6.28571 8.57143Z"
+                                            fill="#FEFCFB" />
+                                    </svg> France</p>
+                            </div>
+                            <div class="price">
+                                <div class="og-price">
+                                    <p>$699</p>
+                                </div>
+                                <div class="discount-price">$599</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-image-card">
+                    <div class="deals-img">
+                        <img src="./images/deals-img4.png" alt="">
+                        <div class="upper-content">
+                            <div class="name">
+                                London
+                            </div>
+                            <div class="rating">
+                                <img src="./images/star 1.png" alt=""> 4.8
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <div class="place">
+                                <p> <svg width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.28572 0C4.61925 0.00196598 3.0216 0.66484 1.84322 1.84321C0.664847 3.02159 0.00197267 4.61924 6.68736e-06 6.28571C-0.00198925 7.64756 0.442853 8.97245 1.26629 10.0571C1.26629 10.0571 1.43772 10.2829 1.46572 10.3154L6.28572 16L11.108 10.3126C11.1331 10.2823 11.3052 10.0571 11.3052 10.0571L11.3057 10.0554C12.1288 8.97121 12.5734 7.64693 12.5714 6.28571C12.5695 4.61924 11.9066 3.02159 10.7282 1.84321C9.54985 0.66484 7.95219 0.00196598 6.28572 0ZM6.28572 8.57143C5.83365 8.57143 5.39173 8.43737 5.01585 8.18622C4.63996 7.93506 4.347 7.57808 4.174 7.16042C4.001 6.74276 3.95573 6.28318 4.04393 5.83979C4.13212 5.39641 4.34981 4.98913 4.66948 4.66947C4.98914 4.34981 5.39642 4.13211 5.8398 4.04392C6.28319 3.95572 6.74277 4.00099 7.16043 4.17399C7.57809 4.34699 7.93507 4.63996 8.18622 5.01584C8.43738 5.39172 8.57144 5.83364 8.57144 6.28571C8.57068 6.89169 8.32962 7.47263 7.90113 7.90112C7.47264 8.32961 6.8917 8.57067 6.28572 8.57143Z"
+                                            fill="#999999" />
+                                        <path
+                                            d="M6.28571 8.57143C7.54808 8.57143 8.57143 7.54808 8.57143 6.28571C8.57143 5.02335 7.54808 4 6.28571 4C5.02335 4 4 5.02335 4 6.28571C4 7.54808 5.02335 8.57143 6.28571 8.57143Z"
+                                            fill="#FEFCFB" />
+                                    </svg> UK</p>
+                            </div>
+                            <div class="price">
+                                <div class="og-price">
+                                    <p>$850</p>
+                                </div>
+                                <div class="discount-price">$850</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="deals-scroll">
+
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>

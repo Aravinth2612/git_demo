@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes shake{
+        /* transform: translateX(-2px); */
+      }
+        @keyframes infiniteZoom {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(3);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        div{
+            animation: infiniteZoom 2s ease-in-out infinite;
+        }
+
+        
+    </style>
+  </head>
+  <body>
+    <script>
+      for (var i = 0; i < 100; i++) {
+        var box = document.createElement("div");
+        var hw = Math.floor(Math.random() * 50) + "px"
+        box.style.width = hw;
+        box.style.height = hw;
+        box.style.borderRadius = "100px";
+        box.style.border = "1px solid black";
+        box.style.position = "absolute";
+        box.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+        box.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
+        box.style.backgroundColor =
+          "rgb(" +
+          Math.floor(Math.random() * 255) +
+          "," +
+          Math.floor(Math.random() * 255) +
+          "," +
+          Math.floor(Math.random() * 255) +
+          ")";
+        document.body.appendChild(box);
+      }
+
+      
+    </script>
+  </body>
+</html>

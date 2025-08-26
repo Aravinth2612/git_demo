@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var container = document.createElement("div");
+
+      container.style.display = "flex";
+      container.style.width = "306px";
+      container.style.flexWrap = "wrap";
+
+      for (var i = 1; i < 10; i++) {
+        var box = document.createElement("div");
+
+        box.innerHTML = i;
+
+        box.style.width = "100px";
+        box.style.height = "100px";
+        box.style.backgroundColor = "orange";
+        box.style.border = "1px solid black"
+
+        container.appendChild(box);
+      }
+
+      document.body.appendChild(container);
+
+      //   var container = document.createElement("div");
+
+      //   var box = document.createElement("div");
+
+      //   box.innerHTML = "Hello World!!";
+
+      //   container.appendChild(box);
+
+      //   document.body.appendChild(container);
+    </script>
+  </body>
+</html>

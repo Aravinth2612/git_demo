@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./word.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="attempts">
+            <div class="row" id="r1">
+                <div class="col" id="r1c1"></div>
+                <div class="col" id="r1c2"></div>
+                <div class="col" id="r1c3"></div>
+                <div class="col" id="r1c4"></div>
+                <div class="col" id="r1c5"></div>
+            </div>
+            <div class="row" id="r2">
+                <div class="col" id="r2c1"></div>
+                <div class="col" id="r2c2"></div>
+                <div class="col" id="r2c3"></div>
+                <div class="col" id="r2c4"></div>
+                <div class="col" id="r2c5"></div>
+            </div>
+            <div class="row" id="r3">
+                <div class="col" id="r3c1"></div>
+                <div class="col" id="r3c2"></div>
+                <div class="col" id="r3c3"></div>
+                <div class="col" id="r3c4"></div>
+                <div class="col" id="r3c5"></div>
+            </div>
+            <div class="row" id="r4">
+                <div class="col" id="r4c1"></div>
+                <div class="col" id="r4c2"></div>
+                <div class="col" id="r4c3"></div>
+                <div class="col" id="r4c4"></div>
+                <div class="col" id="r4c5"></div>
+            </div>
+            <div class="row" id="r5">
+                <div class="col" id="r5c1"></div>
+                <div class="col" id="r5c2"></div>
+                <div class="col" id="r5c3"></div>
+                <div class="col" id="r5c4"></div>
+                <div class="col" id="r5c5"></div>
+            </div>
+            <div class="row" id="r6">
+                <div class="col" id="r6c1"></div>
+                <div class="col" id="r6c2"></div>
+                <div class="col" id="r6c3"></div>
+                <div class="col" id="r6c4"></div>
+                <div class="col" id="r6c5"></div>
+            </div>
+        </div>
+        <div class="attempts" style="margin-top: 55px">
+            <div class="row" id="r2">
+                <div class="col" id="c1" onclick="press('Q')">Q</div>
+                <div class="col" id="c2" onclick="press('W')">W</div>
+                <div class="col" id="c3" onclick="press('E')">E</div>
+                <div class="col" id="c4" onclick="press('R')">R</div>
+                <div class="col" id="c5" onclick="press('T')">T</div>
+                <div class="col" id="c5" onclick="press('Y')">Y</div>
+                <div class="col" id="c5" onclick="press('U')">U</div>
+                <div class="col" id="c5" onclick="press('I')">I</div>
+                <div class="col" id="c5" onclick="press('O')">O</div>
+                <div class="col" id="c5" onclick="press('P')">P</div>
+            </div>
+            <div class="row" id="r2">
+                <div class="col" id="c1" onclick="press('A')">A</div>
+                <div class="col" id="c2" onclick="press('S')">S</div>
+                <div class="col" id="c3" onclick="press('D')">D</div>
+                <div class="col" id="c4" onclick="press('F')">F</div>
+                <div class="col" id="c5" onclick="press('G')">G</div>
+                <div class="col" id="c5" onclick="press('H')">H</div>
+                <div class="col" id="c5" onclick="press('J')">J</div>
+                <div class="col" id="c5" onclick="press('K')">K</div>
+                <div class="col" id="c5" onclick="press('L')">L</div>
+                <!-- <div class="col" id="c5"></div> -->
+            </div>
+            <div class="row" id="r2">
+                <div class="col" id="c1" onclick="press('Del')">Del</div>
+                <div class="col" id="c2" onclick="press('Z')">Z</div>
+                <div class="col" id="c3" onclick="press('X')">X</div>
+                <div class="col" id="c4" onclick="press('C')">C</div>
+                <div class="col" id="c5" onclick="press('V')">V</div>
+                <div class="col" id="c5" onclick="press('B')">B</div>
+                <div class="col" id="c5" onclick="press('N')">N</div>
+                <div class="col" id="c5" onclick="press('M')">M</div>
+                <div class="col" id="c5" onclick="press('Enter')">Enter</div>
+                <!-- <div class="col" id="c5"></div> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        const words = [
+            "Alone",
+            "Arise",
+            "Alter",
+            "Agent",
+            "Anger",
+            "Angle",
+            "Argue",
+            "Aside",
+            "Along",
+            "About",
+            "Abuse",
+            "Actor",
+            "Alive",
+            "After",
+            "Among",
+            "Adopt",
+            "Admit",
+            "Avoid",
+            "Angry",
+            "Album",
+            "Abuzz",
+            "Axing",
+            "Borts",
+            "Cower",
+            "Drupe",
+            "Envoi",
+            "Fadge",
+            "Gamic",
+            "Helot",
+            "Imbue",
+            "Jiber",
+            "Knout",
+            "Lippy",
+            "Muhly",
+            "Nyala",
+            "Oorie",
+            "Plisk",
+            "Quire",
+            "Rerig",
+            "Sculp",
+            "Tepoy",
+            "Umbel",
+            "Vixen",
+            "Waddy",
+            "Xenon",
+            "Yowes",
+            "Zoner",
+            "Feast",
+            "Brick",
+            "Glent",
+            "Jumpy",
+            "Vozhd",
+            "Waqfs",
+            "Quirk",
+            "Karst",
+            "Xebec",
+            "Gnome",
+            "Cruet",
+            "Igloo",
+            "Shard",
+            "Okapi",
+            "Funky",
+            "Orbit",
+            "Comet",
+            "Macaw",
+            "Tares",
+            "Soare",
+            "Ducat",
+            "Carom",
+            "Ergot",
+            "Craic",
+            "Adieu",
+            "Ouija",
+            "Notes",
+            "Resin",
+            "Senor",
+            "Quick",
+            "Jolts",
+            "Dwarf",
+            "Nymph",
+            "Burqa",
+            "Fjeld",
+            "Gowks",
+            "Tizzy",
+            "Steam",
+            "Prick",
+            "Ghoul",
+            "Could",
+            "Found",
+            "Notch",
+            "Blink",
+            "Broke",
+            "Flowy",
+            "Sharp",
+            "Bound",
+            "Beach",
+            "Plant",
+            "Trust",
+            "Round",
+            "Chair",
+            "World",
+            "Stamp",
+            "Green",
+            "Light",
+            "Cloud",
+            "Frame",
+            "Fruit",
+            "Happy",
+            "Money",
+            "Sabre",
+            "Noble",
+            "Grail",
+            "Plank",
+            "Coach",
+            "March",
+            "Birch",
+            "Swank",
+            "Torch",
+            "Dance",
+            "Rough",
+            "Moved",
+            "Trick",
+            "Flute",
+            "Beads",
+            "Crisp",
+            "Mount",
+            "Vital",
+            "Query",
+            "Bunch",
+            "Gloat",
+            "Proud",
+            "Wreck",
+            "Joked",
+            "Haste",
+            "Mends",
+            "Giver",
+            "Whale",
+            "Pious",
+            "Vinyl",
+            "Grind",
+            "Frost",
+            "Plume",
+            "Binge",
+            "Royal",
+            "Quest",
+            "Shout",
+            "Drove",
+            "Child",
+            "Brake",
+            "Paved",
+            "Silky",
+            "Bloat",
+            "Quilt",
+            "Gears",
+            "Vapid",
+            "Miner",
+            "Pacer",
+            "Blend",
+            "Focal",
+            "Tiger",
+            "Zebra",
+            "Creak",
+            "Droid",
+            "Faith",
+            "Homes",
+            "Spice",
+            "Chant",
+            "Mugsy",
+            "Rocky",
+            "Reach",
+            "Velar",
+            "Braws",
+            "Whiny",
+            "Shame",
+            "Clove",
+            "Paint",
+            "Rinse",
+            "Gains",
+            "Baton",
+            "Flair",
+            "Manor",
+            "Chirp",
+            "Dwelt",
+            "Joker",
+            "Vexil",
+            "Usher",
+            "Plumb",
+            "Scent",
+            "Gushy",
+            "Woven",
+        ];
+
+        var randomWord =
+            words[Math.floor(Math.random() * words.length)].toUpperCase();
+
+        console.log(randomWord);
+
+        var userInput = [];
+
+        var compare = randomWord.split("");
+
+
+
+
+        function compareResult() {
+            var result = [];
+            for (let index = 0; index < userInput.length; index++) {
+                if (userInput[index] == compare[index]) {
+                    result.push({
+                        letter: userInput[index],
+                        position: index,
+                        status: "correct",
+                    });
+                } else if (compare.includes(userInput[index])) {
+                    result.push({
+                        letter: userInput[index],
+                        position: index,
+                        status: "present",
+                    });
+                } else {
+                    result.push({
+                        letter: userInput[index],
+                        position: index,
+                        status: "absent",
+                    });
+                }
+            }
+
+            console.log(result)
+        }
+
+        var attempt = 1;
+        var box = 1;
+
+        function press(key) {
+            console.log(attempt, box, key);
+            var cell = document.getElementById("r" + attempt + "c" + box);
+            if (cell && key !== "Enter") {
+                cell.innerText = key;
+                box = box + 1;
+                userInput.push(key)
+            }
+
+            if (key === "Enter") {
+                compareResult()
+                attempt = attempt + 1;
+                box = 1;
+            }
+        }
+
+        //   console.log(result);
+    </script>
+</body>
+
+</html>
